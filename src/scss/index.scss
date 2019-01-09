@@ -1,0 +1,46 @@
+// @import '../../node_modules/bootstrap/scss/bootstrap';
+// @import './custom.scss';
+
+body {
+  margin: 0;
+  > * {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+header {
+  // background-image: url("../public/images/Tint.png");
+  background-color:  rgba(0, 0, 0, 0.35);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 230px;
+  box-sizing: border-box;
+  // font-family: CubanoRegular;
+  .container {
+  }
+  .logo,
+  .menu {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+      text-transform: capitalize;
+      padding: 15px;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+  p {
+    color: #ffffff;
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.19em;
+  }
+}
