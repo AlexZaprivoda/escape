@@ -11,7 +11,7 @@ body {
 
 header {
   // background-image: url("../public/images/Tint.png");
-  background-color:  rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.35);
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@ header {
       font-size: 18px;
       text-transform: capitalize;
       padding: 15px;
-      &:last-child{
+      &:last-child {
         padding-right: 0;
       }
     }
