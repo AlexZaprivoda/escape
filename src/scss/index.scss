@@ -10,22 +10,24 @@ body {
 }
 
 .container {
-  background-image: url("/public/images/Tint.png");
+  background-image: url("/public/images/bg.jpg");
   .section1,
   .section2 {
     height: 440px;
     display: flex;
+    font-family: "Titillium Web", sans-serif;
   }
 }
 
 header {
-  // background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.35);
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 230px;
   box-sizing: border-box;
+  font-family: "Rambla", sans-serif;
   .logo,
   .menu {
     display: flex;
@@ -40,11 +42,21 @@ header {
         padding-right: 0;
       }
       &:hover {
-        color: blue;
+        text-shadow: 2px 0 2px #fafafa;
       }
     }
   }
-  p {
+}
+
+.logo {
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    & > a {
+      text-shadow: 2px 0 2px #fafafa;
+    }
+  }
+  a {
     color: #ffffff;
     margin-left: 10px;
     text-transform: uppercase;
@@ -56,9 +68,43 @@ header {
   height: 550px;
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
+  background-color: rgba(0, 0, 0, 0.35);
   justify-content: space-between;
   align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  & > * {
+    margin: 0;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 66px;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 120px;
+  }
+  a {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 240px;
+    height: 65px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    margin: 70px 0 125px 0;
+    &:hover {
+      box-shadow: 0 0 10px #ffffff;
+      text-shadow: 0 0 1px #ffffff;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
 }
 
 .section1 {
@@ -66,7 +112,6 @@ header {
 }
 
 .section2 {
-  // background-color: burlywood;
   background-color: #fafafa;
   justify-content: center;
   align-items: center;
@@ -76,7 +121,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // height: 240px;
     & > * {
       margin: 0;
     }
@@ -95,4 +139,40 @@ header {
       }
     }
   }
+}
+
+.main {
+  // height: 1560px;
+  // background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    display: flex;
+  }
+  .tabs {
+    height: 590px;
+    background-color: gold;
+  }
+  .clients {
+    height: 810px;
+    background-color: #fafafa;
+  }
+  .logos {
+    height: 160px;
+    // background-color: blue;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0 20px;
+    }
+  }
+  .team {
+    height: 800px;
+    background-color: red;
+  }
+}
+
+.footer {
+  height: 640px;
+  background-color: #7690c5;
 }
