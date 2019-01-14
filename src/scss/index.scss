@@ -109,6 +109,9 @@ header {
 
 .section1 {
   background-color: lightseagreen;
+  justify-content: center;
+  align-items: center;
+  //Alexey
 }
 
 .section2 {
@@ -142,24 +145,28 @@ header {
 }
 
 .main {
-  // height: 1560px;
-  // background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
+  font-family: "Titillium Web", sans-serif;
   & > * {
     display: flex;
   }
   .tabs {
     height: 590px;
     background-color: gold;
+    justify-content: center;
+    align-items: center;
+    //Pavel
   }
   .clients {
     height: 810px;
     background-color: #fafafa;
+    justify-content: center;
+    align-items: center;
+    //Alexey
   }
   .logos {
     height: 160px;
-    // background-color: blue;
     justify-content: center;
     align-items: center;
     img {
@@ -175,4 +182,5 @@ header {
 .footer {
   height: 640px;
   background-color: #7690c5;
+  font-family: "Titillium Web", sans-serif;
 }
